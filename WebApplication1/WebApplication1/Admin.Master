@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="WebApplication1.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>MUSTAFA TUĞRUL CV WEB SİTESİ LOGİN</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="YonetimAnasayfa.aspx">CV Sitesi</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li><a href="YonetimAnasayfa.aspx">Anasayfa</a></li>
+                        <li><a href="YonetimBiyografi.aspx">Biyografi</a></li>
+                        <li><a href="YonetimProjeler.aspx">Projeler</a></li>
+                        <li><a href="YonetimHakkında.aspx">Hakkında</a></li>
+                        <li><a href="YonetimIletisim.aspx">İletişim</a></li>
+                        <li><a href="YonetimFooter.aspx">Footer</a></li>
+                        <li class="active" ><a href="YonetimMail.aspx">Mail</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <div class="container">
+                    <h3>Inverted Navbar</h3>
+                    <p>An inverted navbar is black instead of gray.</p>
+                </div>
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
